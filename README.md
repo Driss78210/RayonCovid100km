@@ -1,0 +1,1 @@
+# RayonCovid100km
