@@ -1,0 +1,36 @@
+.menustyle{
+    display: flex;
+    height: 120px;
+    background: linear-gradient(to bottom right, #0E577F, #66A182);
+    flex-direction: row-reverse;
+    justify-content: center;
+    //centrer verticalement
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    //!centrer verticalement
+    border:1px solid #49473d;
+}
+
+
+
+
+.margemenu{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+
+.margemenu:hover{
+    border-bottom: 1px solid #AEF78E;
+    border-top: 1px solid #AEF78E;
+    color: #AEF78E;
+    cursor: pointer;
+}
+
+.logomenu{
+   margin-right: 100px;
+}
