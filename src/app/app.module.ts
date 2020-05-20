@@ -13,6 +13,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateMessageFormatCompiler } from 'ngx-translate-messageformat-compiler';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import { MapComponent } from './map/map.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -26,9 +30,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     AccueilComponent,
     MenuPage,
     AccueilPage,
-    MapComponent
+    MapComponent,
+    ToolbarComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    TypeaheadModule.forRoot(),
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

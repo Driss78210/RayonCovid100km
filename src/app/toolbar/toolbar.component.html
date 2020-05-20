@@ -1,0 +1,11 @@
+
+<input [(ngModel)]="asyncSelected"
+       [typeahead]="dataSource"
+       (typeaheadLoading)="changeTypeaheadLoading($event)"
+       (typeaheadOnSelect)="typeaheadOnSelect($event)"
+       [typeaheadOptionsLimit]="7"
+       typeaheadOptionField="libelle"
+       placeholder="Votre localisation"
+       class="form-control indexation col-md-4"
+       (change) = "changeSelect()">
+<div *ngIf="typeaheadLoading">Loading</div>
